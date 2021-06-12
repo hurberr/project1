@@ -1,0 +1,123 @@
+#include<iostream>
+#include<stream>
+using namespace std;
+class Ogrenci
+{
+private:
+	int okulno;
+	string ad;
+	string soyad;
+	string okul;
+	string bolum;
+	string sinif;
+	int yas;
+
+public:
+	void setAdi(string dad);
+	string getAdi();
+
+	void setSoyadi(string dsoyad);
+	string getSoyadi();
+
+	void setOkulu(string dokul);
+	string getOkulu();
+
+	void setBolumu(string dbolum);
+	string getBolumu();
+	
+	void setSinifi(string dsinif);
+	string getSinifi();
+
+	void setYasi(int dyas);
+	int getyasi();
+
+	void setOkulnosu(int dokulno);
+	int getOkulnosu();
+
+	void Bilgileriiver();
+};
+void Ogrenci::setAdi(string dad)
+{
+	ad = dad;
+}
+string Ogrenci::getAdi()
+{
+	return ad;
+}
+
+void Ogrenci::setSoyadi(string dsoyad)
+{
+
+	soyad = dsoyad;
+}
+string Ogrenci::getSoyadi()
+{
+	return soyad;
+}
+
+void Ogrenci::setOkulu(string dokul)
+{
+
+
+	okul = dokul;
+}
+
+string Ogrenci::getOkulu()
+{
+	return okul;
+}
+
+
+void Ogrenci::setBolumu(string dbolum)
+{
+	bolum = dbolum;
+
+}
+
+string Ogrenci::getBolumu()
+{
+	return bolum;
+}
+
+void Ogrenci::setSinifi(string dsinif)
+{
+	sinif = dsinif;
+}
+string Ogrenci::getSinifi()
+{
+
+	return sinif;
+}
+
+void Ogrenci::setYasi(int dyas)
+{
+
+	yas = dyas;
+}
+int Ogrenci::getyasi()
+{
+
+	return yas;
+}
+
+void Ogrenci::setOkulnosu(int dokulno)
+{
+	okulno = dokulno;
+}
+int Ogrenci::getOkulnosu()
+{
+	return okulno;
+}
+
+
+void Ogrenci::Bilgileriver()
+{
+	cout << "Ogrenci adi: " << getAdi() << endl;
+	cout << "Ogrenci soyadi: " << getSoyadi() << endl;
+	cout << "Ogrenci yasi: " << getyasi() << endl;
+	cout << "Ogrencinin Okulu: " << getOkulu() << endl;
+	cout << "Ogrencinin Bolumu: " << getBolumu() << endl;
+	cout << "Ogrencinin Sinifi: " << getSinifi() << endl;
+	cout << "Ogrencinin Okul Numarasi: " << getOkulnosu() << endl << endl;
+} 
+
